@@ -1,0 +1,226 @@
+
+
+.aboutus{
+   padding:2rem;
+  //  padding-left: 8rem;
+  position: relative;
+  height: 100%;
+  width:100vw;
+  // left:20%;
+  // overflow-x: hidden;
+  // background: rgb(130,48,11);
+// background: linear-gradient(110deg, rgba(130,48,11,0.8886905103838411) 15%, rgba(74,18,167,1) 47%, rgba(9,9,236,1) 72%, rgba(8,3,62,1) 93%);
+// clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 93%);
+// top:-5.5rem;
+  .text-area{
+  //  position:absolute;
+  //  top:20%;
+  //  left:20%;
+  padding: 2rem 3rem 1rem 0rem ;
+  //  width: 60%;
+   color:rgb(196, 181, 222);
+   overflow-x: hidden;
+
+   p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 5px 0rem;
+    text-align: left;
+
+   }
+   .button{
+    background-color: #4a38bf;
+    width: 12rem;
+    padding: 10px 1rem;
+    font-size: 1.3rem;
+    border-radius:10px;
+    margin-top: 2rem;
+   }
+
+  }
+
+  
+   h1{
+    font-size:3rem;
+    font-weight: 600;
+    // position: absolute;
+    // top:10%;
+    // left:5%;
+    color:#634EF6;
+   }
+    .text-animate1{
+        display: inline-block;
+        animation:fadeIn 2s 7s;
+        animation-fill-mode: backwards;
+        transition: all .3s;
+        min-width: 10px;
+         
+     
+       }
+    
+       @for $i from 24 through 33{
+        ._#{$i}{
+            animation-delay: #{($i/10)-2.3}s;
+        }
+       }
+
+
+  // background-color: rgb(87, 23, 237);
+//   background: rgb(105,33,240);
+// background: linear-gradient(180deg, rgb(60, 33, 110) 9%, rgb(66, 20, 166) 37%, rgb(68, 18, 159) 60%, rgb(19, 1, 52) 95%);
+// padding: 1rem;
+// padding-top: 0;
+//   height: 15rem;
+//   width: 12rem;
+//   text-align: center;
+//   justify-content:center ;
+//   align-items: center;
+//   overflow: hidden;
+//   flex-wrap: wrap;
+//   margin: 0 3rem 3rem 0;
+
+
+  .card-content{
+    transform: translateY(7rem);
+    transition: 0.7s all ease-in-out;
+    z-index: 20;
+    // text-shadow: 4px 2px 4px rgb(98, 85, 174);
+    
+  }
+  &:hover{
+    background-color: rgba(0, 0, 0, 0.353);
+    background-blend-mode: darken;
+    .card-content{
+      transform: translateY(0);
+      
+    }
+   
+    
+    
+  }
+ 
+}
+
+.card-img{
+  // position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center ;
+  align-items: center;
+  // top:0px;
+  // background-color: #220357;
+  padding: 1rem 5px;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
+
+  img{
+    width:3rem;
+    // background-color: #4b456c;
+    margin:5px;
+  
+  }
+
+}
+
+.stage-cube-cont {
+    // width: 40%;
+    height: 100%;
+    // top: 3rem;
+    
+    padding: 2rem 4rem;
+    padding-right: 10px;
+    padding-top: 10%;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+    // overflow-x: hidden;
+    
+    // margin-left: 0;
+   
+    // overflow: hidden;
+  }
+  
+  .cubespinner {
+    
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    // margin-left: calc(50% - 100px);
+  
+    div {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #c1b2ef;
+      background: rgba(188, 170, 240, 0.4);
+      text-align: center;
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px 0px rgb(186, 148, 242);
+    }
+  
+    .face1 {
+      transform: translateZ(100px);
+      color: #dd0031;
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(100px);
+      color: #f06529;
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+      color: #28a4d9;
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+      color: #5ed4f4;
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+      color: #efd81d;
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(100px);
+      color: #ec4d28;
+    }
+  }
+  
+  @keyframes spincube {
+    from,
+    to {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    33% {
+      transform: rotateY(-90deg) rotateX(90deg);
+    }
+    50% {
+      transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+      transform: rotateX(90deg);
+    }
+  }
+//   .loader{
+//     height: 50px;
+//     width: 50px;
+//     margin:auto;
+//     position: absolute;
+//     animation: fadeOut 1s 1s forwards;
+//     top:0;
+//     left:0;
+//     right:0;
+//     bottom:0;
+    
+// }
+

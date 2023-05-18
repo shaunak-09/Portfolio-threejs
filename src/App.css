@@ -1,0 +1,11 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0;
+  padding: 5px;
+  /* text-align: center; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+

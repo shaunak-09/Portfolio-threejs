@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "animate.css";
+.landingpage-content{
+        display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    text-align: left;
+        // padding: 2rem 1rem;
+        // position: relative;
+        // width:100%;
+
+      
+
+       
+  
+        
+  
+       
+      
+    
+  
+       @for $i from 1 through 23{
+        ._#{$i}{
+            animation-delay: #{$i/10}s;
+        }
+       }
+
+        
+        
+    }
+    .text-animate{
+        display: inline-block;
+        animation:fadeIn 2s 1s;
+        animation-fill-mode:backwards;
+        transition: all .3s;
+        min-width: 10px;
+         
+     
+       }
+       .p{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 0;
+        color: rgba(223, 219, 219, 0.756);
+        
+        position: relative;
+        
+        &::before{
+            content:"<h1>";
+            position: absolute;
+            margin-top:-30px;
+            font-size: .9rem;
+            color:rgb(207, 207, 207);
+            font-weight: 600;
+            opacity: .8;
+            letter-spacing: 2px;
+    
+           }
+    }
+       .heading{
+   
+        font-size: 3rem;
+        font-weight: 800;
+        color:#634EF6;
+        // text-shadow:2px 3px 5px #564aa5 ;
+        margin: 0;
+        animation: fadein ;
+        letter-spacing: 8px;
+        position: relative;
+        transition: all .5s;
+        font-family: "Montserrat",sans-serif;
+
+         
+     
+    }
+    
+    .desc{
+        font-size: 1rem;
+        letter-spacing: 5px;
+        // animation: slideInLeft 1s 3.2s backwards;
+        color: rgba(222, 220, 218, 0.822);
+        padding: 1rem 0;
+        
+     
+        &::after{
+            content:"</h1>";
+            position: absolute;
+            margin-left:5%;
+            // font-size: .9rem;
+            color: rgb(179, 177, 177);
+            text-shadow: none;
+            font-weight: 600;
+            letter-spacing: 2px;
+            // margin-top:-10%;
+            // animation:fadeIn 1s s backwards;
+            // opacity: .8;
+          
+            
+            } 
+
+      
+      
+    }
+    @media screen and (max-width:840px){
+        .p{
+            font-size: 2rem;
+        }
+        .heading{
+            font-size: 2.5rem;
+        }
+    }
+    @media screen and (max-width:840px){
+        .p{
+            font-size: 2rem;
+        }
+        .heading{
+            font-size: 2.5rem;
+        }
+    }

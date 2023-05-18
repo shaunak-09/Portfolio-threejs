@@ -1,0 +1,45 @@
+.experi{
+    height: 100%;
+    padding: 1rem;
+    position: relative;
+    // padding-bottom: 15rem;
+    text-align: center;
+    // background-color: bisque;
+    
+   .exp-heading{
+    color:#634EF6;
+    font-weight: 700;
+    padding: 1rem;
+    font-size: 3rem;
+   
+   }
+   .exp-buttons{
+    z-index: 1000;
+    position: relative;
+    .exp-button{
+        // border: none;
+        // background-color: white;
+        padding: 1rem;
+        font-weight:500 ;
+       
+        font-size: 1.3rem;
+        cursor: pointer;
+        z-index: 20;
+         
+       
+       }
+
+   }
+   
+   .exp-button:nth-child(3)
+    {
+        border: none;
+        border-left: 2px solid black;
+    }
+    .exp-button:nth-child(2)
+    {
+        border: none;
+        border-right: 2px solid black;
+    }
+
+}
