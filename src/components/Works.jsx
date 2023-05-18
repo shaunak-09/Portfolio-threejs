@@ -19,10 +19,10 @@ const ProjectCard = ({
 }) => {
   return (
    
-    <Tilt className='xs:w-[320px] w-[300px]  my-5 mr-8'>
+    <Tilt className='xs:w-[320px] w-[300px]    my-5 mr-8'>
     <motion.div
       variants={fadeIn("right", "spring", 1* 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[2px] rounded-[20px] shadow-card'
+      className='w-full green-pink-gradient p-[2px] rounded-[20px] shadow-card '
     >
       <div
         options={{
@@ -35,7 +35,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt='project_image'
-            className='w-full h-[15rem] object-cover rounded-2xl top-0 '
+            className='w-full  object-cover rounded-2xl top-0 h-[15rem] '
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>

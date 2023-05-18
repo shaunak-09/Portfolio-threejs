@@ -50,8 +50,8 @@
 }
 .blue-yellow-gradient {
   background: "#3475f7";
-  background: linear-gradient(90.13deg, #daf012 1.9%, #3c7cfd 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #f6e953 1.9%, #4a83ff 77.5%);
+  background: linear-gradient(90.13deg, #f0f5c0 1.9%, #88adf7 47.5%);
+  background: -webkit-linear-gradient(-90.13deg, #f3efbd 1.9%, #83a7f6 47.5%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
