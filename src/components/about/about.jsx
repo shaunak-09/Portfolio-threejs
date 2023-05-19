@@ -19,33 +19,7 @@ import { motion } from "framer-motion";
 import {fadeIn,textVariant} from "../../utils/motion"
 // import {Bars} from 'react-loader-spinner'
 import Resume from "./Resume.pdf"
-// const ServiceCard = ({ index, title, icon }) => (
-//   <Tilt className='xs:w-[250px] w-full'>
-//     <motion.div
-//       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-//       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-//     >
-//       <div
-//         options={{
-//           max: 45,
-//           scale: 1,
-//           speed: 450,
-//         }}
-//         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-//       >
-//         <img
-//           src={icon}
-//           alt='web-development'
-//           className='w-16 h-16 object-contain'
-//         />
 
-//         <h3 className='text-white text-[20px] font-bold text-center'>
-//           {title}
-//         </h3>
-//       </div>
-//     </motion.div>
-//   </Tilt>
-// );
 function About() {
   const arr1 = ["A", "b", "o", "u", "t", " ", "M", "e"];
   const [letterClass, setLetterClass] = useState("text-animate1");
@@ -59,7 +33,7 @@ function About() {
   return (
     <>
       <div className="aboutus flex flex-col" id="about" >
-        <div className="flex flex-col pl-[8rem]">
+        <div className="flex flex-col relative left-[10%] bg-transparent">
         <h1>
           <AnimatedLetters letterClass={letterClass} strarray={arr1} id={24} />
         </h1>
@@ -88,7 +62,7 @@ function About() {
            
           </div>
 
-          <div className="stage-cube-cont md:w-[40%] w-[80%] ">
+          <div className="stage-cube-cont md:w-[40%] w-[80%] sm:px-[4rem] px-[1rem]">
             <div className="cubespinner">
               <div className="face1">
                 <FontAwesomeIcon icon={faNodeJs} color="#DD0031" />
@@ -111,7 +85,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col md:my-1 my-5 md:py-2 py-5 flex-wrap">
+        <div className="flex md:flex-row flex-col md:my-1 my-5 md:py-2 py-5 flex-wrap items-center justify-start">
           {/* <div className="card flex flex-col relative">
             <div className="card-img">
             <img  src={threejs} />

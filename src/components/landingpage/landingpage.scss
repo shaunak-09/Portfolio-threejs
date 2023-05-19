@@ -132,3 +132,14 @@
             font-size: .7rem;
         }
     }
+    @media screen and (max-width:450px){
+        .p{
+            font-size: 1.2rem;
+        }
+        .heading{
+            font-size: 1.5rem;
+        }
+        .desc{
+            font-size: .6rem;
+        }
+    }

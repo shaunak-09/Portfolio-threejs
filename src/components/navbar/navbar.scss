@@ -28,7 +28,7 @@
        flex-direction: row;
 
         p{
-            font-size: 2rem;
+            // font-size: 2rem;
             margin:0;
             padding: .4rem;
             color: #6c57f6;
@@ -42,8 +42,8 @@
             // }
         }
         .pic{
-          width: 5rem;
-          height: 3rem;
+          // width: 5rem;
+          // height: 3rem;
           // padding:0;
         
         }
@@ -68,12 +68,7 @@
         // }
        
         
-        #menu-bar {
-          width: 45px;
-          height: 40px;
-          margin: 30px 0 20px 20px;
-          cursor: pointer;
-        }
+        
         .bars{
           .bar {
             height: 5px;
@@ -216,4 +211,17 @@ background: radial-gradient(circle, rgb(6, 120, 191) 0%, rgb(85, 41, 245) 0%, #3
         
 
     }
+}
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+@media  screen and (max-width:500px) {
+  #menu-bar{
+    width:40px;
+    height: 25px;
+  }
+  
 }

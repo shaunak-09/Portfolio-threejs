@@ -100,11 +100,13 @@ function Contact() {
   />
           </div>
         ):(
-            <div className='contact flex flex-col-reverse md:flex-row md-px-[2rem] px-3 bg-cover bg-no-repeat' >
+            <div className='contact-box flec flex-col'>
+               <h1 className='contact-head'>Contact Me</h1> 
+        <div className='contact flex flex-col-reverse md:flex-row md-px-[2rem] px-3 bg-cover bg-no-repeat justify-between' >
         <div className='contact-form md:w-[60%] w-[100%] px-[3rem]'  data-aos="fade-up" >
             <ToastContainer />
 
-            <h1>CONTACT ME</h1>
+           
             <form ref={form} onSubmit={handleSubmit} className="form" >
                 <div className='inputfield'>
 
@@ -192,11 +194,14 @@ function Contact() {
         </div>
         <motion.div
         // variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1  md:h-[600px] h-[350px] w-[40%] my-10'
+        className='xl:flex-1  md:h-[600px] xs:h-[350px] h-[220px] w-[40%] my-10'
       >
         <EarthCanvas />
       </motion.div>
     </div>
+
+            </div>
+            
 
         )
     }

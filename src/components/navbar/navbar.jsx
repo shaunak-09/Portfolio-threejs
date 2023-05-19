@@ -36,8 +36,8 @@ const works=document.getElementById("works");
     <div className='navbar'>
     <div className='nav-title'>
        
-       <img src={Profilepic} className='pic'/>
-       <p>SHAUNAK</p>
+       <img src={Profilepic} className='pic xs:w-[4rem] xs:h-[2.5rem] w-[3.5rem] h-[2rem] sm:w-[5rem] sm:h-[3rem]'/>
+       <p className='xs:text-[1.5rem] sm:text-[2rem] text-[1.3rem]'>SHAUNAK</p>
         </div>
     {/* <div className='nav-menu'>
      <div className='nav-item'><a href="">home</a></div>

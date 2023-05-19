@@ -13,7 +13,7 @@ const Hero = () => {
     const arr2=['S','H','A','U','N','A','K','    ','G','H','O','S','H']
   return (
     <section className=' w-full h-screen mx-auto'>
-     <div className='px-[10px] absolute top-[90px] max-w-7xl mx-auto flex flex-row items-start gap-10 left-[10%]'>
+     <div className='xs:px-[10px] px-[5px] absolute xs:top-[90px] top-[150px] max-w-7xl mx-auto flex flex-row items-start gap-10 xs:left-[5%] sm:left-[10%] left-[0%]'>
       <div className='w-1 sm:h-80 h-50 violet-gradient'></div>
      <div className='landingpage-content'>
         <div className='p'>   {<AnimatedLetters letterClass={letterClass1} strarray={arr1} id={1} />}
@@ -26,11 +26,12 @@ const Hero = () => {
           FULLSTACK DEVELOPER | C++ CODER
          
         </div>
-        <Link  to="contact"><button className=' relative bg-[#634EF6] py-3 px-3  my-6 md:text-2xl text-xl md:scale-100 scale-75 font-bold cursor-pointer z-10'>Contact me</button></Link>
+        <Link  to="contact"><button className=' relative bg-[#634EF6] py-3 px-3 my-2 xs:my-6 md:text-2xl text-xl md:scale-100 scale-75 font-bold cursor-pointer z-10'>Contact me</button></Link>
         </div>
        
      </div>
    <ComputersCanvas/>
+   
    
     </section>
   )
