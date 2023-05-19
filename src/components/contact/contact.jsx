@@ -100,7 +100,7 @@ function Contact() {
   />
           </div>
         ):(
-            <div className='contact flex flex-col-reverse md:flex-row md-px-[2rem] px-3 bg-contain bg-no-repeat' >
+            <div className='contact flex flex-col-reverse md:flex-row md-px-[2rem] px-3 bg-cover bg-no-repeat' >
         <div className='contact-form md:w-[60%] w-[100%] px-[3rem]'  data-aos="fade-up" >
             <ToastContainer />
 
