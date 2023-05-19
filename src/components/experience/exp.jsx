@@ -1,7 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import "./exp.scss"
-
+import { expedu, expwork } from '../../constants/constant';
 import React,{useEffect, useState} from 'react'
 
 function Experience() {
@@ -50,51 +50,31 @@ function Experience() {
                 <h1 className='text-2xl my-8'>Education</h1>
                 <VerticalTimeline
                  lineColor='#b2b2b2'>
-                     <VerticalTimelineElement
-                  className="vertical-timeline-element--work "
-                  date="2008 - 2010"
-                  contentStyle={{ background: '#4225b6', color: '#fff' }}
-                  contentArrowStyle={{ borderRight: '7px solid  #4225b6' }}
-                  iconStyle={{ background: '#4225b6', color: '#fff' }}
-                  // icon={<WorkIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title font-extrabold text-xl">IIT KHARAGPUR</h3>
-                  <h4 className="vertical-timeline-element-subtitle font-semibold text-lg">Kharagpur, WB</h4>
-                  <p>
-                  I am a third year undergrad student pursuing Mechanical Engineering at IIT KHARAGPUR
-                  </p>
-                </VerticalTimelineElement>
-                
-               
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
-                  date="2010 - 2011"
-                  contentStyle={{ background: '#a279f9', color: '#000' }}
-                  contentArrowStyle={{ borderRight: '7px solid  #a279f9' }}
-                  iconStyle={{ background: '#a279f9', color: '#000' }}
-                  // icon={<WorkIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title font-extrabold text-xl">HEMSHEELA</h3>
-                  <h4 className="vertical-timeline-element-subtitle font-semibold text-lg">Durgapur, WB</h4>
-                  <p>
-                  I completed my plus 2 from Hemsheela Model School
-                  </p>
-                </VerticalTimelineElement>
-               
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
-                  contentStyle={{ background: '#4225b6', color: '#fff' }}
-                  contentArrowStyle={{ borderRight: '7px solid  #4225b6' }}
-                  date="2011 - present"
-                  iconStyle={{ background: '#4225b6', color: '#fff' }}
-                  // icon={<WorkIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title font-extrabold text-xl">ST.VINCENTS </h3>
-                  <h4 className="vertical-timeline-element-subtitle font-semibold text-lg">Asansol, WB</h4>
-                  <p>
-                  I completed my primary schooling from St.Vincent's High and Technical School
-                  </p>
-                </VerticalTimelineElement>
+                  {
+                    expedu.map((item,i)=>{
+                      return(
+                        <VerticalTimelineElement
+                        className="vertical-timeline-element--education "
+                        date={item.date}
+                        key={i}
+                        dateClassName="date"
+                        contentStyle={i%2==0 ?{background: '#4225b6', color: '#fff' }:{ background: '#a279f9', color: '#000' }}
+                        contentArrowStyle={i%2==0 ?{ borderRight: '7px solid  #4225b6' }:{borderRight: '7px solid  #a279f9'}}
+                        iconStyle={i%2==0?{ background: '#4225b6', color: '#fff' }:{background: '#a279f9', color: '#fff'}}
+                        // icon={<WorkIcon />}
+                      >
+                        <h3 className="vertical-timeline-element-title font-extrabold text-xl">{item.title}</h3>
+                        <h4 className="vertical-timeline-element-subtitle font-semibold text-lg">{item.subtitle}</h4>
+                        <p>
+                       {item.body}
+                        </p>
+                      </VerticalTimelineElement>
+
+                      )
+                     
+
+                    })
+                  }
                 
                 </VerticalTimeline>
 
@@ -106,34 +86,29 @@ function Experience() {
                <h1 className='text-2xl my-8'>Work</h1>
                 <VerticalTimeline
                 lineColor='#634EF6'>
-                      <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="November 2012"
-    contentStyle={{ background: '#302387', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid #302387' }}
-    iconStyle={{ background: '#302387', color: '#fff' }}
-    // icon={<SchoolIcon />}
-  >
-    <h3 className="vertical-timeline-element-title font-extrabold text-xl">PEPCORNS</h3>
-    <h4 className="vertical-timeline-element-subtitle font-semibold text-lg">Full Stack Intern</h4>
-    <p>
-    Built and implemented the complete referral module and learned how to work in live projects and understood how the server works
-    </p>
-  </VerticalTimelineElement>
-                    <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="April 2013"
-    contentStyle={{ background: '#a279f9', color: '#000' }}
-    contentArrowStyle={{ borderRight: '7px solid  #a279f9' }}
-    iconStyle={{ background: '#a279f9', color: '#000' }}
-    // icon={<SchoolIcon />}
-  >
-    <h3 className="vertical-timeline-element-title font-extrabold text-xl">SPRING FEST, IIT KHARAGPUR</h3>
-    <h4 className="vertical-timeline-element-subtitle font-semibold text-lg">Full Stack Developer</h4>
-    <p>
-    Worked in a team of 14 members and built the Frontend of 5 websites and 2 Full Stack websites
-    </p>
-  </VerticalTimelineElement>
+               {       expwork.map((item,i)=>{
+                      return(
+                        <VerticalTimelineElement
+                        className="vertical-timeline-element--education "
+                        date={item.date}
+                        key={i}
+                        dateClassName="date"
+                        contentStyle={i%2==0 ?{background: '#4225b6', color: '#fff' }:{ background: '#a279f9', color: '#000' }}
+                        contentArrowStyle={i%2==0 ?{ borderRight: '7px solid  #4225b6' }:{borderRight: '7px solid  #a279f9'}}
+                        iconStyle={i%2==0?{ background: '#4225b6', color: '#fff' }:{background: '#a279f9', color: '#fff'}}
+                        // icon={<WorkIcon />}
+                      >
+                        <h3 className="vertical-timeline-element-title font-extrabold text-xl">{item.title}</h3>
+                        <h4 className="vertical-timeline-element-subtitle font-semibold text-lg">{item.subtitle}</h4>
+                        <p>
+                       {item.body}
+                        </p>
+                      </VerticalTimelineElement>
+
+                      )
+                     
+
+                    })}
 
   
 

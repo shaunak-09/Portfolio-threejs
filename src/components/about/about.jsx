@@ -7,11 +7,12 @@ import {
   faCss3,
   faGitAlt,
   faHtml5,
-  faJsSquare,
   faNodeJs,
   faReact,
+  faLinkedin,
+  faGithub
 } from "@fortawesome/free-brands-svg-icons";
-import {web,threejs,javascript,ps,tailwind,html,backend,reactjs,redux,nodejs,mongodb,docker,sql,figma,css,git,github} from "../../assets"
+import {ps,reactjs,nodejs} from "../../assets"
 // import Loader from 'react-loaders'
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
@@ -79,6 +80,11 @@ function About() {
             <a href={Resume} download className="button my-3">
             <button className="font-bold">Download CV</button>
             </a>
+            <div className="flex flex-row">
+            <a href="https://github.com/shaunak-09"><FontAwesomeIcon icon={faGithub}   className=" m-3"  size="2xl" style={{color: "#fff",}} /></a>
+            <a href=" https://www.linkedin.com/in/shaunak-ghosh-b6839a227"> <FontAwesomeIcon icon={faLinkedin} className=" m-3" size="2xl" style={{color: "#075ee9",}} /></a>
+            </div>
+            
            
           </div>
 

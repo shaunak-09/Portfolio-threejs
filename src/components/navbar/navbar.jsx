@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './navbar.scss'
 import Profilepic from "../../assets/logo-no-background.png"
 import { Link } from 'react-router-dom';
@@ -11,6 +11,16 @@ const about=document.getElementById("about");
 
 const works=document.getElementById("works");
 
+  window.onscroll=()=>{
+    if (window.scrollY > 300) {
+      document.getElementsByClassName("navbar")[0].style.backgroundColor="black"
+  } else {
+    document.getElementsByClassName("navbar")[0].style.backgroundColor="transparent"
+    
+  }
+}
+
+
   const menuOnClick=()=> {
     setActive(!active)
     // console.log(document.getElementById("menu-bg").classList);
@@ -22,8 +32,8 @@ const works=document.getElementById("works");
   }
 
   return (
+    <div className="">
     <div className='navbar'>
-    
     <div className='nav-title'>
        
        <img src={Profilepic} className='pic'/>
@@ -53,6 +63,9 @@ const works=document.getElementById("works");
   <div className={active?'change-bg menu-bg':"menu-bg"} id="menu-bg"></div>
   <div className={active?'change-bg menu-bg1':"menu-bg"} id="menu-bg"></div>
 </div>
+
+    </div>
+    
 
 
 

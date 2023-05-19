@@ -26,7 +26,7 @@ const Hero = () => {
           FULLSTACK DEVELOPER | C++ CODER
          
         </div>
-        <Link  to="contact"><button className='contact-button relative bg-[#634EF6] py-3 px-3 my-6 text-2xl font-bold cursor-pointer'>Contact me</button></Link>
+        <Link  to="contact"><button className=' relative bg-[#634EF6] py-3 px-3 my-6 text-2xl font-bold cursor-pointer z-10'>Contact me</button></Link>
         </div>
        
      </div>

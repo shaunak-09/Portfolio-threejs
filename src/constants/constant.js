@@ -178,6 +178,43 @@ import {
   //     ],
   //   },
   // ];
+  const expedu=[
+  {
+    title:"IIT KHARAGPUR",
+    date:"2021-Present",
+    subtitle:"Kharagpur, WB",
+    body:"I am a third year undergrad student pursuing Mechanical Engineering at IIT KHARAGPUR",
+  },
+  {
+    title:"HEMSHEELA",
+    date:"2018-2020",
+    subtitle:"Durgapur, WB",
+    body:"I completed my plus 2 from Hemsheela Model School",
+  },
+  {
+    title:"ST.VINCENTS ",
+    date:"2007-2018",
+    subtitle:"Asansol, WB",
+    body:"I completed my primary schooling from St.Vincent's High and Technical School",
+  }
+
+  ]
+  const expwork=[
+    {
+      title:"PEPCORNS",
+      subtitle:"Full Stack Intern",
+      date:"March'23 - April'23",
+      body:"    Built and implemented the complete referral module and learned how to work in live projects and understood how the server works",
+    },
+    {
+      title:"SPRING FEST, IIT KHARAGPUR",
+      subtitle:"Full Stack Developer",
+      date:"July'22 - April'23",
+      body:"Worked in a team of 14 members and built the Frontend of 5 websites and 2 Full Stack websites",
+    }
+  ]
+
+  
   
 
   
@@ -358,5 +395,5 @@ import {
     },
   ];
   
-  export { services, technologies, projects };
+  export { services, technologies, projects, expedu, expwork };
   
