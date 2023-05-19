@@ -64,7 +64,7 @@ function About() {
           <AnimatedLetters letterClass={letterClass} strarray={arr1} id={24} />
         </h1>
         <div className="flex flex-col md:flex-row" >
-          <div className="text-area flex flex-col md:w-[60%] w-[90%] ">
+          <div className="text-area flex flex-col md:w-[60%] w-[100%] ">
             <p data-aos="fade-right">
             I'm a skilled Fullstack developer with experience in
         JavaScript, and expertise in frameworks like React, Node.js, and
@@ -220,7 +220,7 @@ function About() {
      
 
         <h3 className='text-white text-[20px] font-bold text-center py-5'>
-         Deisgn
+         Design
         </h3>
       </div>
     </motion.div>

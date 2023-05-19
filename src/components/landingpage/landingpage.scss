@@ -110,11 +110,25 @@
             font-size: 2.5rem;
         }
     }
-    @media screen and (max-width:840px){
+    @media screen and (max-width:700px){
         .p{
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         .heading{
-            font-size: 2.5rem;
+            font-size: 2.2rem;
+        }
+        .desc{
+            font-size: .8rem;
+        }
+    }
+    @media screen and (max-width:600px){
+        .p{
+            font-size: 1.5rem;
+        }
+        .heading{
+            font-size: 2rem;
+        }
+        .desc{
+            font-size: .7rem;
         }
     }
