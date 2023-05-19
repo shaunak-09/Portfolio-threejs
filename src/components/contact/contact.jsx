@@ -1,4 +1,4 @@
-import React,{useRef}from 'react'
+import React,{useRef,useState,useEffect}from 'react'
 import './contact.scss'
 import {useFormik} from 'formik'
 import * as Yup from 'yup'
@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { sendForm } from '@emailjs/browser';
 import {ToastContainer,toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Audio } from  'react-loader-spinner'
 // import star from '../../assets';
 
 
@@ -28,6 +29,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
     const form = useRef();
+    const [loading, setLoading] = useState(true);
+    useEffect(()=>{
+        setTimeout(()=>{
+          setLoading(false)
+        },[2000])
+      },[])
     const sendEmail = (e) => {
             // props.e.preventDefault();
             console.log(e);
@@ -78,7 +85,22 @@ function Contact() {
         }
     
   return (
-    <div className='contact flex flex-col-reverse md:flex-row md-px-[2rem] px-3 bg-contain bg-no-repeat' >
+    <>
+        {
+        loading?(
+            <div className='w-[100vw] h-[100vh] bg-tertiary flex justify-center items-center '>
+            <Audio
+    height="100"
+    width="100"
+    color="#4fa94d"
+    ariaLabel="audio-loading"
+    wrapperStyle={{}}
+    wrapperClass="wrapper-class"
+    visible={true}
+  />
+          </div>
+        ):(
+            <div className='contact flex flex-col-reverse md:flex-row md-px-[2rem] px-3 bg-contain bg-no-repeat' >
         <div className='contact-form md:w-[60%] w-[100%] px-[3rem]'  data-aos="fade-up" >
             <ToastContainer />
 
@@ -175,6 +197,12 @@ function Contact() {
         <EarthCanvas />
       </motion.div>
     </div>
+
+        )
+    }
+    </>
+
+    
   )
 }
 
