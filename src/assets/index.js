@@ -34,9 +34,13 @@ import spotify from "./spotify.png"
 import nwp from "./nwp.png"
 import profile from "./profile.png"
 import bookstore from "./bookstore.png"
+import pc from "./pc.png";
+import ca from "./CA.png"
 
 export {
   sf,
+  ca,
+  pc,
   spotify,
   nwp,
   profile,

@@ -7,6 +7,7 @@ import {
     typescript,
     html,
     css,
+    ca,
     reactjs,
     redux,
     tailwind,
@@ -270,7 +271,7 @@ import {
         },
       ],
       image: sf,
-      source_code_link: "https://github.com/",
+      source_code_link: "http://sf-main-mobile.vercel.app/",
     },
     {
       name: "NWP ",
@@ -293,6 +294,28 @@ import {
       ],
       image: nwp,
       source_code_link: "https://github.com/",
+    },
+    {
+      name: "Camous Ambassador",
+      type:"Frontend",
+      description:
+      "Website of Spring Fest to select campus ambassadors from colleges across India",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: ca,
+      source_code_link: "http://campus-ambassador.vercel.app/",
     },
     {
       name: "Spotify Clone ",

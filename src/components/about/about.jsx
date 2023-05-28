@@ -33,7 +33,7 @@ function About() {
   return (
     <>
       <div className="aboutus flex flex-col" id="about" >
-        <div className="flex flex-col relative left-[10%] bg-transparent">
+        <div className="flex flex-col relative sm:left-[10%] left-[2%] bg-transparent">
         <h1>
           <AnimatedLetters letterClass={letterClass} strarray={arr1} id={24} />
         </h1>
