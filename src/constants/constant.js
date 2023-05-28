@@ -25,6 +25,11 @@ import {
     sql,
     tripguide,
     threejs,
+    sf,
+    nwp,
+    spotify,
+    profile,
+    bookstore,
   } from "../assets";
   
   export const navLinks = [
@@ -264,7 +269,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: sf,
       source_code_link: "https://github.com/",
     },
     {
@@ -286,7 +291,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: nwp,
       source_code_link: "https://github.com/",
     },
     {
@@ -313,7 +318,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: spotify,
       source_code_link: "https://github.com/shaunak-09/Spotify-clone",
     },
     {
@@ -340,7 +345,7 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: tripguide,
+      image: profile,
       source_code_link: "https://github.com/shaunak-09/clipher_school",
     },
     {
@@ -390,7 +395,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: bookstore,
       source_code_link: "https://github.com/shaunak-09/bookstore-react",
     },
   ];

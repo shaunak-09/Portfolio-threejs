@@ -29,7 +29,18 @@ import tripguide from "./tripguide.png";
 import sql from "./tech/sql2.png"
 import ps from "./tech/ps.png"
 import star from "./star.jpg"
+import sf from "./SF.png"
+import spotify from "./spotify.png"
+import nwp from "./nwp.png"
+import profile from "./profile.png"
+import bookstore from "./bookstore.png"
+
 export {
+  sf,
+  spotify,
+  nwp,
+  profile,
+  bookstore,
   logo,
   backend,
   creator,
