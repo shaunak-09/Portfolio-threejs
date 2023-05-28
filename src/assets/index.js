@@ -36,9 +36,11 @@ import profile from "./profile.png"
 import bookstore from "./bookstore.png"
 import pc from "./pc.png";
 import ca from "./CA.png"
+import lth from "./lth.png"
 
 export {
   sf,
+  lth,
   ca,
   pc,
   spotify,

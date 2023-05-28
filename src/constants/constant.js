@@ -248,7 +248,7 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: carrent,
+      image: lth,
       source_code_link: "https://github.com/shaunak-09/Labyrinth-backend",
     },
     {
