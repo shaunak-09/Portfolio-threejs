@@ -37,9 +37,11 @@ import bookstore from "./bookstore.png"
 import pc from "./pc.png";
 import ca from "./CA.png"
 import lth from "./lth.png"
+import chatbot from "./chatbot.png"
 
 export {
   sf,
+  chatbot,
   lth,
   ca,
   pc,

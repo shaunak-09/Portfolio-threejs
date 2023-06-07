@@ -3,6 +3,7 @@ import {
     backend,
     creator,
     web,
+    chatbot,
     javascript,
     typescript,
     html,
@@ -396,7 +397,7 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: profile,
+      image: chatbot,
       source_code_link: "https://github.com/shaunak-09/Chatbot",
     },
     {
