@@ -209,16 +209,26 @@ import {
   ]
   const expwork=[
     {
+      title:"SEARCH-IN",
+      subtitle:"Full Stack Intern",
+      date:"Jun'23 - Aug'23",
+      body1:"• Contributed to the seamless integration of an Admin Dashboard using ReactJS",
+      body2:"• Contributed to the Frontend of Shopify Vendor, through seamless integration of Shopify API"
+
+    },
+
+    {
       title:"PEPCORNS",
       subtitle:"Full Stack Intern",
-      date:"March'23 - April'23",
-      body:"    Built and implemented the complete referral module and learned how to work in live projects and understood how the server works",
+      date:"Mar'23 - Apr'23",
+      body1:"• Developed NodeJS and SQL-based referral module, incorporating APIs, database schemas, and frontend integration",
+      body2:"• Collaborated on AWS live server, using SSH for remote access",
     },
     {
       title:"SPRING FEST, IIT KHARAGPUR",
       subtitle:"Full Stack Developer",
-      date:"July'22 - April'23",
-      body:"Worked in a team of 14 members and built the Frontend of 5 websites and 2 Full Stack websites",
+      date:"Jul'22 - Apr'23",
+      body1:"• Worked in a team of 14 members and built a Full-Stack game and 5 Frontend web apps, attracting 10K+ users for event registrations",
     }
   ]
 

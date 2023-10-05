@@ -65,7 +65,7 @@ function Experience() {
                       >
                         <h3 className="vertical-timeline-element-title font-extrabold text-xl">{item.title}</h3>
                         <h4 className="vertical-timeline-element-subtitle font-semibold text-lg">{item.subtitle}</h4>
-                        <p>
+                        <p className=' text-left'>
                        {item.body}
                         </p>
                       </VerticalTimelineElement>
@@ -100,8 +100,11 @@ function Experience() {
                       >
                         <h3 className="vertical-timeline-element-title font-extrabold text-xl">{item.title}</h3>
                         <h4 className="vertical-timeline-element-subtitle font-semibold text-lg">{item.subtitle}</h4>
-                        <p>
-                       {item.body}
+                        <p className='text-left my-0'>
+                       {item.body1}
+                        </p>
+                        <p className='text-left my-0'>
+                       {item.body2}
                         </p>
                       </VerticalTimelineElement>
 
